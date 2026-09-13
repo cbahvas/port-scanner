@@ -1,13 +1,17 @@
 # port-scanner
 
-Simple TCP port scanner written in Python.
+Simple multithreaded TCP port scanner written in Python.
 
 ## Usage
 
-Edit the host and port range at the bottom of `scanner.py`, then run:
+```bash
+python scanner.py <host> [--start-port START] [--end-port END] [--timeout SECONDS]
+```
+
+Example:
 
 ```bash
-python scanner.py
+python scanner.py 127.0.0.1 --start-port 1 --end-port 1024 --timeout 0.3
 ```
 
 ## Disclaimer
